@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="pt-br" translate="no">
+  
+<!-- Mirrored from app.deliveryveneza.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 May 2025 18:57:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+    <script
+      src="scripts/utms/latest.js"
+      data-utmify-prevent-subids=""
+      async=""
+      defer=""
+    ></script>
+    <script>
+      window.googlePixelId = "6839cb85a73c51a062f5f7e1";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute(
+        "src",
+        "../cdn.utmify.com.br/scripts/pixel/pixel-google.js"
+      );
+      document.head.appendChild(a);
+    </script>
+
+    <meta name="google" content="notranslate" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/jpg" href="images/pizzaria.jpg" />
+    <title>Pizzaria Sanchez - Faça seu pedido!</title>
+    <meta
+      name="description"
+      content="Faça seu pedido online na Pizzaria Sanchez . Acesse e peça agora pelo delivery food!"
+    />
+    <link type="text/css" href="css/delivry.css" rel="stylesheet" />
+    <style type="text/css">
+      h1,
+      h2 {
+        color: #028b49;
+      }
+
+      header#topo .cover {
+        background-color: #028b49;
+      }
+
+      header#topo .info h1 {
+        color: #028b49;
+      }
+
+      header#topo .info .icones a {
+        color: #028b49;
+        border-color: #028b49;
+      }
+
+      header#topo .cover .logo {
+        background: #028b49;
+      }
+
+      header#topo #menuCategorias {
+        background: #028b49;
+      }
+
+      header#topo .categorias a {
+        border-top-color: #028b49;
+      }
+
+      footer {
+        background: #028b49;
+      }
+
+      footer#carrinho .container .icone span {
+        color: #028b49;
+      }
+
+      .btn,
+      a.voltar,
+      .btnSair,
+      .btnFidelidade,
+      .btnGoogle,
+      .btnEmail,
+      .btnSemCadastro {
+        background: #028b49;
+      }
+
+      .qtdeProduto i:hover {
+        color: #028b49;
+      }
+
+      .lista .item .col .nomeProduto {
+        color: #028b49;
+      }
+
+      main#lista .produtos .item a:hover {
+        border: 2px solid #028b49;
+      }
+
+      #pedido .entrega .radio label input[type="radio"]:checked,
+      #pedido .entrega .radio label:hover {
+        background: #028b49;
+      }
+
+      #pedido .pagamentos input[type="radio"]:checked + label::before,
+      #detalhesProduto
+        .info2
+        .opcoes
+        input[type="checkbox"]:checked
+        + label::before,
+      #pedido .trocarPontos input[type="checkbox"]:checked + label::before {
+        background-color: #028b49;
+        border: 2px solid #028b49;
+      }
+
+      .selecionado {
+        border: 2px solid #028b49;
+      }
+
+      #meuCarrinho button.fechar,
+      #rastreamento .registro span.passou {
+        background: #028b49;
+      }
+
+      span.estoque i {
+        color: #028b49;
+      }
+    </style>
+    <meta name="theme-color" content="#028b49" />
+    <meta name="apple-mobile-web-app-capacity" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar" content="##028b49" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#028b49" />
+    <meta name="apple-mobile-web-app-title" content="Pizzaria Sanchez" />
+    <!-- SweetAlert2 -->
+    <script src="npm/sweetalert2%4011"></script>
+    <link rel="stylesheet" href="icone91f?family=Material+Icons" />
+  </head>
+
+  <body>
+    <div id="opacidade" class="fechar"></div>
+    <div>
+      <header id="topo">
+        <div class="cover main" style="background-image: url(images/capa.jpg)">
+          <div class="logo">
+            <figure>
+              <img
+                src="images/pizzaria.jpg"
+                alt="Pizzaria Sanchez"
+                title="Pizzaria Sanchez"
+              />
+            </figure>
+          </div>
+          <div class="borda"></div>
+        </div>
+        <div class="container">
+          <div class="info">
+            <h1>Pizzaria Sanchez</h1>
+            <div class="icones">
+              <a
+                href="https://www.instagram.com/"
+                title="Instagram"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="informacoes" href="#info" title="Info">
+                <i class="fa-solid fa-info"></i>
+              </a>
+            </div>
+            <div class="detalhe">
+              <span
+                ><i class="fa-solid fa-coins"></i> Pedido Mínimo
+                <b>R$ 10,00</b></span
+              >
+              <div>
+                <span
+                  ><i class="fa-solid fa-motorcycle"></i> <b>30-50</b> min</span
+                >
+                • <span style="color: #077c22">Grátis</span>
+              </div>
+            </div>
+            <div class="detalhe" style="gap: 3px">
+              <i class="fa fa-map-marker-alt" aria-hidden="true"></i
+              ><span id="localCidade">Cidade</span> -
+              <span id="localEstado">UF</span> • 1,6km de você
+            </div>
+            <div
+              class="detalhe"
+              style="display: flex; flex-direction: column; gap: 4px"
+            >
+              <div style="display: flex; align-items: center; gap: 6px">
+                <i aria-hidden="true" style="color: #ffd700" data-fa-i2svg=""
+                  ><svg
+                    class="svg-inline--fa fa-star"
+                    aria-hidden="true"
+                    style="color: #ffd700"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="star"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"
+                    ></path></svg
+                ></i>
+                <b>4,8</b> (1.589 avaliações)
+                <span
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    background-color: #ffe6e6;
+                    padding: 2px 6px;
+                    border-radius: 12px;
+                    font-size: 13px;
+                    color: #d80000;
+                  "
+                >
+                  <i aria-hidden="true" style="color: #d80000" data-fa-i2svg=""
+                    ><svg
+                      class="svg-inline--fa fa-star"
+                      aria-hidden="true"
+                      style="color: #d80000"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="star"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"
+                      ></path></svg
+                  ></i>
+                  Super
+                </span>
+              </div>
+              <div style="display: flex; gap: 6px">
+                <span
+                  style="
+                    background-color: #ffffff;
+                    border: 1px solid #000000;
+                    padding: 2px 8px;
+                    border-radius: 12px;
+                    font-size: 13px;
+                    color: #000000;
+                  "
+                >
+                  Ótimo atendimento
+                </span>
+                <span
+                  style="
+                    background-color: #ffffff;
+                    border: 1px solid #000000;
+                    padding: 2px 8px;
+                    border-radius: 12px;
+                    font-size: 13px;
+                    color: #000000;
+                  "
+                >
+                  Melhores preços
+                </span>
+              </div>
+            </div>
+            <div class="aberto">
+              <i class="btn-pisca" data-fa-i2svg=""
+                ><svg
+                  class="svg-inline--fa fa-circle"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="circle"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                  ></path></svg
+              ></i>
+              <span id="status-loja">ABERTO</span>
+              <i
+                class="horario"
+                id="icone-relogio"
+                style="display: none"
+                data-fa-i2svg=""
+                ><svg
+                  class="svg-inline--fa fa-clock"
+                  style="display: none"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="far"
+                  data-icon="clock"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M232 120C232 106.7 242.7 96 256 96C269.3 96 280 106.7 280 120V243.2L365.3 300C376.3 307.4 379.3 322.3 371.1 333.3C364.6 344.3 349.7 347.3 338.7 339.1L242.7 275.1C236 271.5 232 264 232 255.1L232 120zM256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0zM48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48C141.1 48 48 141.1 48 256z"
+                  ></path></svg
+              ></i>
+              <span
+                class="horario"
+                id="horario-fechamento"
+                style="display: none"
+              ></span>
+            </div>
+            <script>
+              function atualizarStatusLoja() {
+                const agora = new Date();
+                const horas = agora.getHours();
+                const statusLoja = document.getElementById("status-loja");
+                const iconeRelogio = document.getElementById("icone-relogio");
+                const horarioFechamento =
+                  document.getElementById("horario-fechamento");
+
+                if (horas >= 0 && horas < 2) {
+                  statusLoja.textContent = "ABERTO";
+                  horarioFechamento.textContent = "até 02:00";
+                  iconeRelogio.style.display = "inline";
+                  horarioFechamento.style.display = "inline";
+                } else if (horas >= 8 && horas < 23) {
+                  statusLoja.textContent = "ABERTO";
+                  iconeRelogio.style.display = "none";
+                  horarioFechamento.style.display = "none";
+                } else {
+                  statusLoja.textContent = "ABERTO";
+                  iconeRelogio.style.display = "none";
+                  horarioFechamento.style.display = "none";
+                }
+              }
+
+              atualizarStatusLoja();
+            </script>
+          </div>
+        </div>
+        <div id="menuCategorias">
+          <div class="container">
+            <div class="categorias" style="">
+              <a href="#pague-1-leve-2" title="Pague 1, Leve 2">
+                Pague 1, Leve 2 Pizza + 1 Refrigerante 2 Litros
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main id="lista" style="padding-bottom: 0">
+        <div class="container">
+          <div class="alert alert-success">
+            <b>Entrega Grátis</b> para <b id="localCidade">sua região</b>!
+          </div>
+          <div
+            class="alert alert-success"
+            style="color: red; outline: 2px solid red"
+          >
+            Aproveite nossa <b>promoção com preços irresistíveis</b> igual Pizza
+            ❤️
+          </div>
+          <div id="pague-1-leve-2" class="categoria">
+            <h2>Pague 1, Leve 2</h2>
+            <div class="produtos">
+              <div class="item">
+                <a class="disponivel" href="produtos/pizza1.html">
+                  <div class="texto">
+                    <h3>2 Pizza PP + 1 Refrigerante 2 Litros</h3>
+                    <span>Borda Recheada Grátis</span>
+                    de <span class="precoPromocao">R$ 40,00</span> por
+                    <span class="preco"> R$ 32,90 </span>
+                  </div>
+                  <div class="fotoProduto">
+                    <figure>
+                      <img
+                        src="images/pizzafoto.jpg"
+                        width="110px"
+                        height="110px"
+                        loading="lazy"
+                        alt="(Apenas Retirada) Açaí 770ml"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a class="disponivel" href="produtos/pizza2.html">
+                  <div class="texto">
+                    <h3>2 Pizza P + 1 Refrigerante 2 Litros</h3>
+                    <span>Borda Recheada Grátis</span>
+                    de <span class="precoPromocao">R$ 63,80</span> por
+                    <span class="preco"> R$ 42,90 </span>
+                  </div>
+                  <div class="fotoProduto">
+                    <figure>
+                      <img
+                        src="images/pizzafoto.jpg"
+                        width="110px"
+                        height="110px"
+                        loading="lazy"
+                        alt="(Apenas Retirada) Açaí 770ml"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a
+                  class="disponivel pulsar"
+                  href="produtos/pizza3.html"
+                  style="border: 2px solid #077c22"
+                >
+                  <div class="texto">
+                    <span
+                      style="
+                        color: #5b0e5c;
+                        background: #f1cdf2;
+                        padding: 2px 2px;
+                        margin-bottom: 2px;
+                        border-radius: 8px;
+                        text-align: center;
+                      "
+                      ><b>MAIS VENDIDO ❤️</b></span
+                    >
+                    <h3>2 Pizza M + 1 Refrigerante 2 Litros</h3>
+                    <span>Borda Recheada Grátis</span>
+                    <span
+                      style="
+                        color: #474747;
+                        background: #e8e8e8;
+                        padding: 10px 10px;
+                        margin-bottom: 2px;
+                        margin-top: 2px;
+                        border-radius: 8px;
+                        text-align: left;
+                      "
+                      >Poucas Unidades <b>Recheio Extra</b>!</span
+                    >
+                    de <span class="precoPromocao">R$ 73,80</span> por
+                    <span class="preco" style="font-size: 20px">
+                      <b
+                        style="
+                          background: #077c22;
+                          color: white;
+                          border-radius: 8px;
+                          padding: 0px 4px;
+                        "
+                        >R$ 55,90</b
+                      >
+                    </span>
+                    <span
+                      ><i
+                        >A maioria dos clientes escolhe esse porque é o melhor
+                        custo-benefício!</i
+                      ></span
+                    >
+                    <span class="estoque" style="margin-top: 4px"
+                      >🔥 Apenas
+                      <b
+                        style="
+                          background: red;
+                          color: white;
+                          border-radius: 8px;
+                          padding: 0px 4px;
+                        "
+                        ><span id="estoqueCombo">8</span> combo(s)</b
+                      >
+                      com esse preço especial</span
+                    >
+                  </div>
+                  <div class="fotoProduto">
+                    <figure>
+                      <img
+                        src="images/pizzafoto.jpg"
+                        width="110px"
+                        height="110px"
+                        loading="lazy"
+                        alt="(Apenas Retirada) Açaí 770ml"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="alert alert-success"
+                style="
+                  color: red;
+                  outline: 2px solid red;
+                  background-color: rgb(255, 217, 217);
+                "
+              >
+                <b>A promoção vai acabar em:</b>
+                <div class="countdown">
+                  <div class="box">
+                    <span id="minutes">00</span>
+                    <p>Minutos</p>
+                  </div>
+                  <div class="box">
+                    <span id="seconds">00</span>
+                    <p>Segundos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <a class="disponivel" href="produtos/pizza4.html">
+                  <div class="texto">
+                    <h3>2 Pizza G + 1 Refrigerante 2 Litros</h3>
+                    <span>Borda Recheada Grátis</span>
+                    de <span class="precoPromocao">R$ 123,80</span> por
+                    <span class="preco"> R$ 75,90 </span>
+                  </div>
+                  <div class="fotoProduto">
+                    <figure>
+                      <img
+                        src="images/pizzafoto.jpg"
+                        width="110px"
+                        height="110px"
+                        loading="lazy"
+                        alt="(Apenas Retirada) Açaí 770ml"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="pague-1-leve-2-zero" class="categoria"></div>
+          <h2></h2>
+          <div class="produtos">
+            <div class="item">
+              <div class="texto"></div>
+              <div class="fotoProduto"></div>
+            </div>
+            <div class="item">
+              <div class="texto"></div>
+              <div class="fotoProduto"></div>
+            </div>
+            <div class="item">
+              <a
+                class="disponivel pulsar"
+                href="produtos/pizza5.html"
+                style="border: 2px solid #077c22"
+              >
+                <div class="texto">
+                  <span
+                    style="
+                      color: #5b0e5c;
+                      background: #f1cdf2;
+                      padding: 2px 2px;
+                      margin-bottom: 2px;
+                      border-red: 8px;
+                      text-align: center;
+                    "
+                    ><b>MAIS VENDIDO ❤️</b></span
+                  >
+                  <h3>2 Pizza Gigante + 2 Refrigerante 2 Litros</h3>
+                  <span>Borda Recheada Grátis</span>
+                  <span
+                    style="
+                      color: #474747;
+                      background: #e8e8e8;
+                      padding: 10px 10px;
+                      margin-bottom: 2px;
+                      margin-top: 2px;
+                      border-radius: 8px;
+                      text-align: left;
+                    "
+                    >Dobro de Refrigerante <b></b>!</span
+                  >
+                  de <span class="precoPromocao">R$ 159,80</span> por
+                  <span class="preco" style="font-size: 20px">
+                    <b
+                      style="
+                        background: #077c22;
+                        color: white;
+                        border-radius: 8px;
+                        padding: 0px 4px;
+                      "
+                      >R$ 98,90</b
+                    >
+                  </span>
+                  <span
+                    ><i
+                      >A maioria dos clientes escolhe esse porque é o melhor
+                      custo-benefício!</i
+                    ></span
+                  >
+                  <span class="estoque" style="margin-top: 4px"
+                    >🔥 Apenas
+                    <b
+                      style="
+                        background: red;
+                        color: white;
+                        border-radius: 8px;
+                        padding: 0px 4px;
+                      "
+                      ><span id="estoqueCombo">16</span> combo(s)</b
+                    >
+                    com esse preço especial</span
+                  >
+                </div>
+                <div class="fotoProduto">
+                  <figure>
+                    <img
+                      src="images/pizzafoto.jpg"
+                      width="110px"
+                      height="110px"
+                      loading="lazy"
+                      alt="(Apenas Retirada) Açaí 770ml"
+                    />
+                  </figure>
+                </div>
+              </a>
+            </div>
+            <div
+              class="alert alert-success"
+              style="
+                color: red;
+                outline: 2px solid red;
+                background-color: rgb(255, 217, 217);
+              "
+            >
+              <b>A promoção vai acabar em:</b>
+              <div class="countdown">
+                <div class="box">
+                  <span id="minutes">00</span>
+                  <p>Minutos</p>
+                </div>
+                <div class="box">
+                  <span id="seconds">00</span>
+                  <p>Segundos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main id="lista">
+        <div class="container">
+          <div class="alert">
+            <b style="font-size: 20px">4,8</b><br />
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: goldenrod"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: goldenrod"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: goldenrod"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: goldenrod"
+            ></i>
+            <i
+              class="fa fa-star-half-alt"
+              aria-hidden="true"
+              style="color: goldenrod"
+            ></i>
+            <br />
+            <b>136 avaliações</b> • últimos 90 dias
+            <br />
+            <label style="color: gray">1.007 avaliações no total</label>
+          </div>
+          <div class="categoria">
+            <div class="produtos">
+              <!-- Avaliação 1 -->
+              <div
+                class="item"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 10px;
+                  border-bottom: 1px solid #ddd;
+                "
+              >
+                <div class="avaliacao" style="flex-grow: 1">
+                  <h3 style="margin: 0; font-size: 16px; color: #333">Laysa</h3>
+                  <div style="display: flex; align-items: center">
+                    <span
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-right: 5px;
+                      "
+                      >5,0</span
+                    >
+                    <span class="estrelas" style="display: flex">
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                    </span>
+                    <span
+                      class="data"
+                      style="margin-left: auto; font-size: 12px; color: #888"
+                    ></span>
+                  </div>
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #555">
+                    Melhor pizzaria da região! Aproveitei a promoção e saí muito
+                    satisfeito. Pizza saborosa e ainda ganhei um refrigerante de
+                    2L!
+                  </p>
+                </div>
+                <div class="fotoProduto" style="margin-left: 15px">
+                  <figure style="margin: 0">
+                    <img
+                      src="images/prova1.jpg"
+                      width="70px"
+                      height="70px"
+                      loading="lazy"
+                      style="border-radius: 8px"
+                    />
+                  </figure>
+                </div>
+              </div>
+
+              <!-- Avaliação 2 -->
+              <div
+                class="item"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 10px;
+                  border-bottom: 1px solid #ddd;
+                "
+              >
+                <div class="avaliacao" style="flex-grow: 1">
+                  <h3 style="margin: 0; font-size: 16px; color: #333">Nadia</h3>
+                  <div style="display: flex; align-items: center">
+                    <span
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-right: 5px;
+                      "
+                      >5,0</span
+                    >
+                    <span class="estrelas" style="display: flex">
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                    </span>
+                    <span
+                      class="data"
+                      style="margin-left: auto; font-size: 12px; color: #888"
+                    ></span>
+                  </div>
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #555">
+                    Sensacional! Pedi uma pizza e levei duas! A massa é perfeita
+                    e o recheio bem caprichado. Cliente fiel a partir de hoje!
+                  </p>
+                </div>
+                <div class="fotoProduto" style="margin-left: 15px">
+                  <figure style="margin: 0">
+                    <img
+                      src="images/prova2.jpg"
+                      width="70px"
+                      height="70px"
+                      loading="lazy"
+                      style="border-radius: 8px"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <!-- Avaliação 3 -->
+              <div
+                class="item"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 10px;
+                  border-bottom: 1px solid #ddd;
+                "
+              >
+                <div class="avaliacao" style="flex-grow: 1">
+                  <h3 style="margin: 0; font-size: 16px; color: #333">Aline</h3>
+                  <div style="display: flex; align-items: center">
+                    <span
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-right: 5px;
+                      "
+                      >5,0</span
+                    >
+                    <span class="estrelas" style="display: flex">
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                    </span>
+                    <span
+                      class="data"
+                      style="margin-left: auto; font-size: 12px; color: #888"
+                    ></span>
+                  </div>
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #555">
+                    Ótima experiência! Atendimento rápido, pizza deliciosa e
+                    ainda ganhei um refri. Super recomendo!
+                  </p>
+                </div>
+                <div class="fotoProduto" style="margin-left: 15px">
+                  <figure style="margin: 0">
+                    <img
+                      src="images/prova3.jpg"
+                      width="70px"
+                      height="70px"
+                      loading="lazy"
+                      style="border-radius: 8px"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <!-- Avaliação 4 -->
+              <div
+                class="item"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 10px;
+                  border-bottom: 1px solid #ddd;
+                "
+              >
+                <div class="avaliacao" style="flex-grow: 1">
+                  <h3 style="margin: 0; font-size: 16px; color: #333">
+                    Kamilly
+                  </h3>
+                  <div style="display: flex; align-items: center">
+                    <span
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-right: 5px;
+                      "
+                      >5,0</span
+                    >
+                    <span class="estrelas" style="display: flex">
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                    </span>
+                    <span
+                      class="data"
+                      style="margin-left: auto; font-size: 12px; color: #888"
+                    ></span>
+                  </div>
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #555">
+                    As pizzas são muito bem recheadas e assadas no ponto certo!
+                    Promoção incrível, já quero mais!
+                  </p>
+                </div>
+                <div class="fotoProduto" style="margin-left: 15px">
+                  <figure style="margin: 0">
+                    <img
+                      src="images/prova4.jpg"
+                      width="70px"
+                      height="70px"
+                      loading="lazy"
+                      style="border-radius: 8px"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <!-- Avaliação 5 -->
+              <div
+                class="item"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 10px;
+                  border-bottom: 1px solid #ddd;
+                "
+              >
+                <div class="avaliacao" style="flex-grow: 1">
+                  <h3 style="margin: 0; font-size: 16px; color: #333">Karol</h3>
+                  <div style="display: flex; align-items: center">
+                    <span
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-right: 5px;
+                      "
+                      >5,0</span
+                    >
+                    <span class="estrelas" style="display: flex">
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                    </span>
+                    <span
+                      class="data"
+                      style="margin-left: auto; font-size: 12px; color: #888"
+                    ></span>
+                  </div>
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #555">
+                    Vale muito a pena! Pizza quentinha, bem recheada e ainda
+                    veio o refrigerante grátis. Nota 10!
+                  </p>
+                </div>
+                <div class="fotoProduto" style="margin-left: 15px">
+                  <figure style="margin: 0">
+                    <img
+                      src="images/prova5.jpg"
+                      width="70px"
+                      height="70px"
+                      loading="lazy"
+                      style="border-radius: 8px"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <!-- Avaliação 6 -->
+              <div
+                class="item"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 10px;
+                  border-bottom: 1px solid #ddd;
+                "
+              >
+                <div class="avaliacao" style="flex-grow: 1">
+                  <h3 style="margin: 0; font-size: 16px; color: #333">
+                    Talita
+                  </h3>
+                  <div style="display: flex; align-items: center">
+                    <span
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-right: 5px;
+                      "
+                      >5,0</span
+                    >
+                    <span class="estrelas" style="display: flex">
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                    </span>
+                    <span
+                      class="data"
+                      style="margin-left: auto; font-size: 12px; color: #888"
+                    ></span>
+                  </div>
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #555">
+                    Nunca vi uma promoção tão boa! A pizza estava deliciosa e
+                    ainda levei mais uma. Já virei cliente!
+                  </p>
+                </div>
+                <div class="fotoProduto" style="margin-left: 15px">
+                  <figure style="margin: 0">
+                    <img
+                      src="images/prova7.jpg"
+                      width="70px"
+                      height="70px"
+                      loading="lazy"
+                      style="border-radius: 8px"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <!-- Avaliação 7 -->
+              <div
+                class="item"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 10px;
+                  border-bottom: 1px solid #ddd;
+                "
+              >
+                <div class="avaliacao" style="flex-grow: 1">
+                  <h3 style="margin: 0; font-size: 16px; color: #333">Aline</h3>
+                  <div style="display: flex; align-items: center">
+                    <span
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-right: 5px;
+                      "
+                      >5,0</span
+                    >
+                    <span class="estrelas" style="display: flex">
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                    </span>
+                    <span
+                      class="data"
+                      style="margin-left: auto; font-size: 12px; color: #888"
+                    ></span>
+                  </div>
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #555">
+                    Recomendo demais! Entrega rápida, pizza saborosa e ainda
+                    veio um refri de 2L na faixa. Top!
+                  </p>
+                </div>
+                <div class="fotoProduto" style="margin-left: 15px">
+                  <figure style="margin: 0">
+                    <img
+                      src="images/prova8.jpg"
+                      width="70px"
+                      height="70px"
+                      loading="lazy"
+                      style="border-radius: 8px"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <!-- Avaliação 8 -->
+              <div
+                class="item"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 10px;
+                  border-bottom: 1px solid #ddd;
+                "
+              >
+                <div class="avaliacao" style="flex-grow: 1">
+                  <h3 style="margin: 0; font-size: 16px; color: #333">Iana</h3>
+                  <div style="display: flex; align-items: center">
+                    <span
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-right: 5px;
+                      "
+                      >5,0</span
+                    >
+                    <span class="estrelas" style="display: flex">
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                    </span>
+                    <span
+                      class="data"
+                      style="margin-left: auto; font-size: 12px; color: #888"
+                    ></span>
+                  </div>
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #555">
+                    Melhor custo-benefício! Pizza de qualidade, entrega no
+                    horário e atendimento excelente!
+                  </p>
+                </div>
+                <div class="fotoProduto" style="margin-left: 15px">
+                  <figure style="margin: 0">
+                    <img
+                      src="images/prova9.jpg"
+                      width="70px"
+                      height="70px"
+                      loading="lazy"
+                      style="border-radius: 8px"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <!-- Avaliação 9 -->
+              <div
+                class="item"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 10px;
+                  border-bottom: 1px solid #ddd;
+                "
+              >
+                <div class="avaliacao" style="flex-grow: 1">
+                  <h3 style="margin: 0; font-size: 16px; color: #333">
+                    Gustavo
+                  </h3>
+                  <div style="display: flex; align-items: center">
+                    <span
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-right: 5px;
+                      "
+                      >5,0</span
+                    >
+                    <span class="estrelas" style="display: flex">
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                      <i
+                        class="fa fa-star"
+                        style="color: goldenrod; font-size: 14px"
+                      ></i>
+                    </span>
+                    <span
+                      class="data"
+                      style="margin-left: auto; font-size: 12px; color: #888"
+                    ></span>
+                  </div>
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #555">
+                    Que delícia! Além de super recheada, a pizza chegou bem
+                    quente. A promoção vale muito a pena!
+                  </p>
+                </div>
+                <div class="fotoProduto" style="margin-left: 15px">
+                  <figure style="margin: 0">
+                    <img
+                      src="images/prova12.jpg"
+                      width="70px"
+                      height="70px"
+                      loading="lazy"
+                      style="border-radius: 8px"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal da Imagem -->
+          <div
+            id="modalImagem"
+            style="
+              display: none;
+              position: fixed;
+              z-index: 1000;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.8);
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img
+              id="imagemExpandida"
+              style="max-width: 90%; max-height: 90%; border-radius: 10px"
+            />
+          </div>
+
+          <script>
+            function formatarDataHoje() {
+              let hoje = new Date();
+              let dia = String(hoje.getDate()).padStart(2, "0");
+              let mes = String(hoje.getMonth() + 1).padStart(2, "0");
+              let ano = hoje.getFullYear();
+              return `${dia}/${mes}/${ano}`;
+            }
+
+            document.querySelectorAll(".data-atual").forEach((el) => {
+              el.innerText = formatarDataHoje();
+            });
+
+            function expandirImagem(img) {
+              let modal = document.getElementById("modalImagem");
+              let imagemExpandida = document.getElementById("imagemExpandida");
+              imagemExpandida.src = img.src;
+              modal.style.display = "flex";
+
+              modal.onclick = function () {
+                modal.style.display = "none";
+              };
+            }
+          </script>
+          <div
+            class="alert alert-success"
+            style="
+              color: red;
+              outline: 2px solid red;
+              background-color: rgb(255, 217, 217);
+              padding: 20px 10px;
+            "
+          >
+            <b>A promoção vai acabar em:</b>
+            <div class="countdown">
+              <div class="box">
+                <span id="minutes">00</span>
+                <p>Minutos</p>
+              </div>
+              <div class="box">
+                <span id="seconds">00</span>
+                <p>Segundos</p>
+              </div>
+            </div>
+            <a
+              href="#pague-1-leve-2"
+              style="
+                background-color: white;
+                border-radius: 8px;
+                padding: 4px 10px;
+                color: #5b0e5c;
+              "
+              >Clique Para Ver pizzas em Promoção ❤️</a
+            >
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="produto"></div>
+    <div id="info">
+      <a class="fechar" href="#fechar"
+        ><i class="far fa-times-circle fa-2x"></i
+      ></a>
+      <h2>Tipos de Entrega</h2>
+      <i class="fa-solid fa-motorcycle"></i> Entrega Motoboy<br />
+      <i class="fa-solid fa-box"></i> Retirada<br />
+      <br />
+      <h2>Formas de Pagamento</h2>
+      <i class="fa-regular fa-circle-check"></i> Pix<br />
+      <br />
+      <h2>Endereço</h2>
+      <span id="localCidade">cidade</span> - <span id="localEstado">UF</span
+      ><br />
+      <br />
+      <h2>Áreas de Entrega</h2>
+      <h3>
+        <span id="localCidade">cidade</span> - <span id="localEstado">UF</span>
+      </h3>
+      GRÁTIS (hoje)<br />
+      <br />
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/delivry.js"></script>
+    <script type="text/javascript">
+      $(".mostrarHorario").on("click", function () {
+        $(".horarios").toggle("slow");
+      });
+    </script>
+
+    <script type="text/javascript">
+      function updateCountdown() {
+        const now = new Date();
+        const nextMidnight = new Date();
+        nextMidnight.setHours(24, 0, 0, 0);
+
+        const diff = nextMidnight - now;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document
+          .querySelectorAll("#minutes")
+          .forEach((el) => (el.textContent = String(minutes).padStart(2, "0")));
+        document
+          .querySelectorAll("#seconds")
+          .forEach((el) => (el.textContent = String(seconds).padStart(2, "0")));
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+    </script>
+
+    <script
+      src="js/all.js"
+      data-auto-replace-svg="nest"
+      defer=""
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="js/sweetalert.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      function escolherFraseAleatoria() {
+        const frases = [
+          "🎉 <b>Lucas</b> aproveitou a promoção e comprou 1 pizza e levou 2, + refrigerante de 2L!",
+          "🚀 <b>Ana</b> garantiu o Combo Pizza 1 + 2 grátis, e ainda levou refrigerante de 2L!",
+          "🍕 <b>Rafaela</b> finalizou a compra do Combo Pizza e levou 2, + refrigerante de 2L agora!",
+          "🔥 <b>Fernando</b> comprou 1 pizza e levou 2, com refrigerante de 2L grátis!",
+          "😋 <b>Isabela</b> adicionou o Combo 1 Pizza + 2 Grátis e levou refrigerante 2L!",
+          "⏳ <b>Bruno</b> aproveitou a promoção de Pizza 1 + 2 Grátis e levou seu refrigerante de 2L!",
+          "📦 <b>João</b> pediu 1 pizza e levou 2, mais refrigerante de 2L agora mesmo!",
+          "🏆 <b>Mirella</b> garantiu a promoção Pizza 1 + 2 Grátis com refrigerante de 2L!",
+          "🚨 <b>Atenção</b>! Mais de <b>15 pedidos</b> de Pizza com promoção Pizza 1 + 2 Grátis nos últimos 10 minutos!",
+          "🔥 Nas últimas 2 horas, 37 pessoas aproveitaram a promoção Pizza 1 + 2 Grátis com refrigerante de 2L!",
+          "⚡ Acabamos de bater 100 pedidos de Pizza + 2 Grátis com refrigerante de 2L só hoje!",
+          "⏳ Apenas 4 unidades da promoção Pizza 1 + 2 Grátis restantes! Corra antes que acabe!",
+          "🚀 +20 pedidos de pizza feitos nos últimos 30 minutos! Aproveite a promoção Pizza 1 + 2 Grátis!",
+          "🍕 A promoção Pizza 1 + 2 Grátis está esgotando rápido! Aproveite agora com refrigerante 2L!",
+          "🎯 Mais de 250 clientes satisfeitos com a promoção Pizza 1 + 2 Grátis nos últimos 7 dias!",
+          "💜 Obrigado! Mais de 500 pedidos de Pizza com promoção Pizza 1 + 2 Grátis já saíram esse mês!",
+          "🚀 Só hoje, 73 clientes garantiram seu combo Pizza 1 + 2 Grátis com refrigerante de 2L!",
+          "⏳ O estoque da promoção Pizza 1 + 2 Grátis está quase esgotando! Últimas unidades!",
+          "🎉 Promoção Pizza 1 + 2 Grátis com refrigerante de 2L está fazendo sucesso! +40 pedidos só hoje!",
+        ];
+
+        const indiceAleatorio = Math.floor(Math.random() * frases.length);
+        return frases[indiceAleatorio];
+      }
+
+      function mostrarNotificacao(frase) {
+        if (!Swal.isVisible()) {
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "bottom-end",
+            showConfirmButton: false,
+            timer: 6500,
+            timerProgressBar: true,
+          });
+          Toast.fire({
+            icon: "success",
+            title: frase,
+          });
+        }
+      }
+
+      setInterval(() => {
+        const fraseAleatoria = escolherFraseAleatoria();
+        mostrarNotificacao(fraseAleatoria);
+      }, 25000);
+    </script>
+
+    <script>
+      function diminuirEstoque() {
+        document.querySelectorAll("#estoqueCombo").forEach((elemento) => {
+          let estoqueAtual = parseInt(elemento.textContent, 10);
+          if (estoqueAtual > 1) {
+            elemento.textContent = estoqueAtual - 1;
+          }
+        });
+      }
+
+      setInterval(diminuirEstoque, 15000);
+    </script>
+
+    <script>
+      function setCookie(name, value, days) {
+        let expires = new Date(Date.now() + days * 864e5).toUTCString();
+        document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+      }
+
+      function getCookie(name) {
+        return document.cookie.split("; ").reduce((acc, cookie) => {
+          let [key, val] = cookie.split("=");
+          return key === name ? val : acc;
+        }, "");
+      }
+
+      function checkCookie(nome) {
+        return getCookie(nome) !== "";
+      }
+
+      async function fetchLocation() {
+        try {
+          let response = await fetch("https://get.geojs.io/v1/ip/geo.json");
+          let { city = "Local Desconhecido", region = "Local Desconhecido" } =
+            await response.json();
+          return { city, region };
+        } catch (error) {
+          console.error("Erro ao obter a localização:", error);
+          return { city: "Local Desconhecido", region: "Local Desconhecido" };
+        }
+      }
+
+      const estados = {
+        Rondônia: "RO", Acre: "AC", Amazonas: "AM", Roraima: "RR", Pará: "PA",
+        Amapá: "AP", Tocantins: "TO", Maranhão: "MA", Piauí: "PI", Ceará: "CE",
+        "Rio Grande do Norte": "RN", Paraíba: "PB", Pernambuco: "PE",
+        Alagoas: "AL", Sergipe: "SE", Bahia: "BA", "Minas Gerais": "MG",
+        "Espírito Santo": "ES", "Rio de Janeiro": "RJ", "São Paulo": "SP",
+        Paraná: "PR", "Santa Catarina": "SC", "Rio Grande do Sul": "RS",
+        "Mato Grosso do Sul": "MS", "Mato Grosso": "MT", Goiás: "GO",
+        "Distrito Federal": "DF",
+      };
+
+      const estados_input = {
+        RO: "Rondônia", AC: "Acre", AM: "Amazonas", RR: "Roraima", PA: "Pará",
+        AP: "Amapá", TO: "Tocantins", MA: "Maranhão", PI: "Piauí", CE: "Ceará",
+        RN: "Rio Grande do Norte", PB: "Paraíba", PE: "Pernambuco",
+        AL: "Alagoas", SE: "Sergipe", BA: "Bahia", MG: "Minas Gerais",
+        ES: "Espírito Santo", RJ: "Rio de Janeiro", SP: "São Paulo",
+        PR: "Paraná", SC: "Santa Catarina", RS: "Rio Grande do Sul",
+        MS: "Mato Grosso do Sul", MT: "Mato Grosso", GO: "Goiás",
+        DF: "Distrito Federal",
+      };
+
+      const cidades_por_estados = [["RO","Alta Floresta D'oeste"],["RO","Ariquemes"],["RO","Cabixi"],["RO","Cacoal"],["RO","Cerejeiras"],["RO","Colorado do Oeste"],["RO","Corumbiara"],["RO","Costa Marques"],["RO","Espigão D'oeste"],["RO","Guajará-mirim"],["RO","Jaru"],["RO","Ji-paraná"],["RO","Machadinho D'oeste"],["RO","Nova Brasilândia D'oeste"],["RO","Ouro Preto do Oeste"],["RO","Pimenta Bueno"],["RO","Porto Velho"],["RO","Presidente Médici"],["RO","Rio Crespo"],["RO","Rolim de Moura"],["RO","Santa Luzia D'oeste"],["RO","Vilhena"],["RO","São Miguel do Guaporé"],["RO","Nova Mamoré"],["RO","Alvorada D'oeste"],["RO","Alto Alegre Dos Parecis"],["RO","Alto Paraíso"],["RO","Buritis"],["RO","Novo Horizonte do Oeste"],["RO","Cacaulândia"],["RO","Campo Novo de Rondônia"],["RO","Candeias do Jamari"],["RO","Castanheiras"],["RO","Chupinguaia"],["RO","Cujubim"],["RO","Governador Jorge Teixeira"],["RO","Itapuã do Oeste"],["RO","Ministro Andreazza"],["RO","Mirante da Serra"],["RO","Monte Negro"],["RO","Nova União"],["RO","Parecis"],["RO","Pimenteiras do Oeste"],["RO","Primavera de Rondônia"],["RO","São Felipe D'oeste"],["RO","São Francisco do Guaporé"],["RO","Seringueiras"],["RO","Teixeirópolis"],["RO","Theobroma"],["RO","Urupá"],["RO","Vale do Anari"],["RO","Vale do Paraíso"],["AC","Acrelândia"],["AC","Assis Brasil"],["AC","Brasiléia"],["AC","Bujari"],["AC","Capixaba"],["AC","Cruzeiro do Sul"],["AC","Epitaciolândia"],["AC","Feijó"],["AC","Jordão"],["AC","Mâncio Lima"],["AC","Manoel Urbano"],["AC","Marechal Thaumaturgo"],["AC","Plácido de Castro"],["AC","Porto Walter"],["AC","Rio Branco"],["AC","Rodrigues Alves"],["AC","Santa Rosa do Purus"],["AC","Senador Guiomard"],["AC","Sena Madureira"],["AC","Tarauacá"],["AC","Xapuri"],["AC","Porto Acre"],["AM","Alvarães"],["AM","Amaturá"],["AM","Anamã"],["AM","Anori"],["AM","Apuí"],["AM","Atalaia do Norte"],["AM","Autazes"],["AM","Barcelos"],["AM","Barreirinha"],["AM","Benjamin Constant"],["AM","Beruri"],["AM","Boa Vista do Ramos"],["AM","Boca do Acre"],["AM","Borba"],["AM","Caapiranga"],["AM","Canutama"],["AM","Carauari"],["AM","Careiro"],["AM","Careiro da Várzea"],["AM","Coari"],["AM","Codajás"],["AM","Eirunepé"],["AM","Envira"],["AM","Fonte Boa"],["AM","Guajará"],["AM","Humaitá"],["AM","Ipixuna"],["AM","Iranduba"],["AM","Itacoatiara"],["AM","Itamarati"],["AM","Itapiranga"],["AM","Japurá"],["AM","Juruá"],["AM","Jutaí"],["AM","Lábrea"],["AM","Manacapuru"],["AM","Manaquiri"],["AM","Manaus"],["AM","Manicoré"],["AM","Maraã"],["AM","Maués"],["AM","Nhamundá"],["AM","Nova Olinda do Norte"],["AM","Novo Airão"],["AM","Novo Aripuanã"],["AM","Parintins"],["AM","Pauini"],["AM","Presidente Figueiredo"],["AM","Rio Preto da Eva"],["AM","Santa Isabel do Rio Negro"],["AM","Santo Antônio do Içá"],["AM","São Gabriel da Cachoeira"],["AM","São Paulo de Olivença"],["AM","São Sebastião do Uatumã"],["AM","Silves"],["AM","Tabatinga"],["AM","Tapauá"],["AM","Tefé"],["AM","Tonantins"],["AM","Uarini"],["AM","Urucará"],["AM","Urucurituba"],["SP","São Paulo"],["SP","Campinas"],["SP","Santos"],["SP","Guarulhos"],["SP","São Bernardo do Campo"],["SP","Osasco"],["SP","Sorocaba"],["SP","Ribeirão Preto"],["SP","São José dos Campos"],["SP","Mauá"],["RJ","Rio de Janeiro"],["RJ","Niterói"],["RJ","Duque de Caxias"],["RJ","Nova Iguaçu"],["RJ","São Gonçalo"],["MG","Belo Horizonte"],["MG","Uberlândia"],["MG","Contagem"],["MG","Juiz de Fora"],["MG","Betim"],["PR","Curitiba"],["PR","Londrina"],["PR","Maringá"],["PR","Ponta Grossa"],["PR","Cascavel"],["RS","Porto Alegre"],["RS","Caxias do Sul"],["RS","Pelotas"],["RS","Canoas"],["RS","Santa Maria"],["SC","Florianópolis"],["SC","Joinville"],["SC","Blumenau"],["SC","São José"],["SC","Criciúma"],["BA","Salvador"],["BA","Feira de Santana"],["BA","Vitória da Conquista"],["BA","Camaçari"],["BA","Itabuna"],["GO","Goiânia"],["GO","Aparecida de Goiânia"],["GO","Anápolis"],["GO","Rio Verde"],["GO","Luziânia"],["PE","Recife"],["PE","Caruaru"],["PE","Olinda"],["PE","Petrolina"],["PE","Paulista"],["CE","Fortaleza"],["CE","Caucaia"],["CE","Juazeiro do Norte"],["CE","Maracanaú"],["CE","Sobral"],["PA","Belém"],["PA","Ananindeua"],["PA","Santarém"],["PA","Marabá"],["PA","Castanhal"],["MA","São Luís"],["MA","Imperatriz"],["MA","Timon"],["MA","Caxias"],["MA","Codó"],["ES","Vitória"],["ES","Vila Velha"],["ES","Serra"],["ES","Cariacica"],["ES","Linhares"],["MT","Cuiabá"],["MT","Várzea Grande"],["MT","Rondonópolis"],["MT","Sinop"],["MT","Tangará da Serra"],["MS","Campo Grande"],["MS","Dourados"],["MS","Três Lagoas"],["MS","Corumbá"],["MS","Ponta Porã"],["DF","Brasília"],["RN","Natal"],["RN","Mossoró"],["RN","Parnamirim"],["RN","São Gonçalo do Amarante"],["RN","Macaíba"],["PB","João Pessoa"],["PB","Campina Grande"],["PB","Santa Rita"],["PB","Patos"],["PB","Bayeux"],["AL","Maceió"],["AL","Arapiraca"],["AL","Palmeira Dos Índios"],["AL","Rio Largo"],["AL","Penedo"],["SE","Aracaju"],["SE","Nossa Senhora do Socorro"],["SE","Lagarto"],["SE","Itabaiana"],["SE","São Cristóvão"],["PI","Teresina"],["PI","Parnaíba"],["PI","Picos"],["PI","Piripiri"],["PI","Floriano"],["TO","Palmas"],["TO","Araguaína"],["TO","Gurupi"],["TO","Porto Nacional"],["TO","Paraíso do Tocantins"],["AP","Macapá"],["AP","Santana"],["AP","Laranjal do Jari"],["AP","Oiapoque"],["AP","Mazagão"],["RR","Boa Vista"],["RR","Caracaraí"],["RR","Rorainópolis"],["RR","Mucajaí"],["RR","Alto Alegre"]];
+
+      async function atualizarLocalizacao() {
+        let cidade = getCookie("localCidade");
+        let estado = getCookie("localEstado");
+
+        if (!cidade || !estado) {
+          ({ city: cidade, region: estado } = await fetchLocation());
+        }
+
+        document
+          .querySelectorAll("#localCidade")
+          .forEach((el) => (el.textContent = cidade));
+        document
+          .querySelectorAll("#localEstado")
+          .forEach((el) => (el.textContent = estado));
+      }
+
+      async function escolherLocalizacao() {
+        await atualizarLocalizacao();
+
+        if (checkCookie("localCidade") && checkCookie("localEstado")) {
+          return;
+        }
+
+        let buscarLocalizacao = await fetchLocation();
+        let estado = buscarLocalizacao.region;
+        let cidadeTemp = buscarLocalizacao.city;
+        let uf = estados[estado] || "";
+
+        let { value: estadoEscolhido } = await Swal.fire({
+          title: "Procure a loja mais próxima de você!",
+          text: "Escolha seu estado:",
+          input: "select",
+          inputOptions: estados_input,
+          inputPlaceholder: "Escolha seu estado",
+          inputValue: uf,
+          confirmButtonText: "Próximo",
+          confirmButtonColor: "green",
+          allowOutsideClick: false,
+          allowEscapeKey: false,
+          inputValidator: (value) =>
+            value ? undefined : "Por favor, escolha seu estado.",
+        });
+
+        setCookie("localEstado", estadoEscolhido, 365);
+
+        var quais_opt_de_cidade = [];
+
+        cidades_por_estados.forEach((item, index) => {
+          if (item[0] == estadoEscolhido) {
+            quais_opt_de_cidade.push(item[1]);
+          }
+        });
+
+        let { value: cidadeEscolhida } = await Swal.fire({
+          title: "Estamos quase lá...",
+          text: "Agora, selecione sua cidade:",
+          input: "select",
+          inputOptions: quais_opt_de_cidade,
+          inputValue: quais_opt_de_cidade.indexOf(cidadeTemp),
+          confirmButtonText: "Procurar loja mais próxima!",
+          confirmButtonColor: "green",
+          allowOutsideClick: false,
+          allowEscapeKey: false,
+          inputValidator: (value) =>
+            value ? undefined : "Por favor, escolha sua cidade.",
+        });
+
+        cidadeEscolhida = quais_opt_de_cidade[cidadeEscolhida];
+
+        setCookie("localCidade", cidadeEscolhida, 365);
+
+        Swal.fire({
+          title: "Procurando a loja mais próxima...",
+          html: `Procurando a loja mais próxima de você em <b>${cidadeEscolhida}</b>...`,
+          timer: 5000,
+          timerProgressBar: true,
+          allowOutsideClick: false,
+          didOpen: () => Swal.showLoading(),
+        }).then(() => {
+          Swal.fire({
+            html: `A loja mais próxima fica a <b>1,6km</b> de você! Seu pedido chegará entre 30 a 50 minutos.`,
+            icon: "success",
+            confirmButtonText: "Olhar cardápio de ofertas!",
+            confirmButtonColor: "green",
+            allowOutsideClick: false,
+          }).then(atualizarLocalizacao);
+        });
+      }
+
+      escolherLocalizacao();
+    </script>
+  </body>
+
+<!-- Mirrored from app.deliveryveneza.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 May 2025 18:57:46 GMT -->
+</html>
